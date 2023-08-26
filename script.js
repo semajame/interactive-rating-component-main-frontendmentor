@@ -17,8 +17,9 @@ button.forEach((buttons)=>{
 })
 
 submit.addEventListener("click",()=>{
-    container.classList.add("active");
-    thankyou.classList.add("active");
-    selectedHTML.innerHTML = `You have selected ${rating} out of 5`;
-    
+    if(rating){
+        container.classList.add("active");
+        thankyou.classList.add("active");
+        selectedHTML.innerHTML = `You have selected ${rating} out of 5`;
+    }
 });
