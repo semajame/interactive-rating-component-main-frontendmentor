@@ -8,15 +8,17 @@ const button = document.querySelectorAll(".button");
 
 const selectedHTML = document.querySelector(".selected");
 
+let rating = '';
+
+button.forEach((buttons)=>{
+    buttons.addEventListener("click",()=>{
+        rating = buttons.getAttribute("data-value");
+    });
+})
+
 submit.addEventListener("click",()=>{
     container.classList.add("active");
     thankyou.classList.add("active");
-
-    button.forEach((number)=> {
-       
-        var buttonValue = number.value;
-        
-        // Now, you can use the buttonValue as needed
-        selectedHTML.innerHTML = `You selected ${buttonValue} out of 5`;
-    });
-})
+    selectedHTML.innerHTML = `You have selected ${rating} out of 5`;
+    
+});
