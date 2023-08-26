@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+body {
+  font-family: "Overpass", sans-serif;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: #121417;
+}
+
+.container, .thankyou-container.active {
+  background-color: #252d37;
+  padding: 2rem;
+  border-radius: 30px;
+  max-width: 500px;
+}
+.container h1, .thankyou-container.active h1 {
+  margin-top: 2rem;
+  color: hsl(0, 0%, 100%);
+}
+.container p, .thankyou-container.active p {
+  color: hsl(217, 12%, 63%);
+  margin: 1rem 0 2rem 0;
+  max-width: 365px;
+}
+.container.active, .active.thankyou-container {
+  display: none;
+}
+
+.star-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #121417;
+}
+.button-group {
+  display: flex;
+  justify-content: space-between;
+}
+.button-group button {
+  border-radius: 50%;
+  border: none;
+  padding: 1rem;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #7c8798;
+  cursor: pointer;
+  background-color: hsl(213, 20%, 15%);
+  font-weight: 700;
+}
+.button-group button:focus {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+}
+
+.submit-button {
+  margin: 2rem 0 0 0;
+  width: 100%;
+  text-align: center;
+}
+.submit-button .submit {
+  cursor: pointer;
+  background-color: hsl(25, 97%, 53%);
+  width: 100%;
+  border: none;
+  border-radius: 30px;
+  padding: 0.925rem 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 100%);
+  letter-spacing: 0.2rem;
+}
+.submit-button .submit:hover {
+  color: hsl(25, 97%, 53%);
+  background-color: hsl(0, 0%, 100%);
+  transition: 200ms;
+}
+
+.thankyou-container {
+  display: none;
+}
+.thankyou-container.active {
+  display: block;
+  padding-bottom: 0;
+}
+.thankyou-container.active h1 {
+  margin-top: 2rem;
+  color: hsl(0, 0%, 100%);
+}
+.thankyou-container.active p {
+  color: hsl(217, 12%, 63%);
+  margin: 1rem 0 2rem 0;
+  max-width: 365px;
+}
+
+.image-info {
+  text-align: center;
+}
+.image-info img {
+  margin: 0 auto 2rem auto;
+}
+.image-info .selected {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  background: hsl(213, 20%, 15%);
+  color: hsl(25, 97%, 53%);
+}
+
+.content {
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */
